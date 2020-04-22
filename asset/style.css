@@ -456,7 +456,7 @@ html {
 }
 
 .ungap {
-    width: 100vw;
+    max-width: 100vw;
 }
 
 /* gap end */
@@ -509,7 +509,7 @@ html {
 }
 
 .field-content:after {
-    content: '';
+    content: 'test';
     position: absolute;
     z-index: -1;
     transition: all 0.2s;
@@ -518,7 +518,7 @@ html {
 .field-box {
     z-index: 1;
     box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
-    background-image: url('gUuPz9.gif');
+    background-image: url('2.png');
     background-size: cover;
 }
 
@@ -527,6 +527,7 @@ html {
 }
 
 .field-title-box:after {
+    top: -10px;
     width: 150vw;
     height: 40rem;
     background: rgba(255, 255, 255, 0.644);
@@ -536,8 +537,10 @@ html {
 
 @media only screen and (max-width: 768px) {
     .field-title-box:after {
-        width: 160vw;
-        height: 50vh;
+        top: -17%;
+        width: 190vw;
+        height: 10.5rem;
+        transform: translateX(0) translateY(0) rotate(0);
     }
 }
 
@@ -556,15 +559,12 @@ html {
 
 /* button*/
 .btn {
-    display: grid;
     font-family: 'Æ Systematic TT BRK';
     outline: none;
     border-radius: 5px;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    margin-right: 1rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     cursor: pointer;
-
     background: none;
     position: relative;
 }
@@ -576,39 +576,71 @@ html {
     transition: all 0.2s;
 }
 
-.btn-1 {
+.btn-grass {
+    background-color: rgb(146, 207, 110);
     z-index: 1;
-    border: 3px solid red;
-    color: red;
+    border: none;
+    color: rgb(34, 34, 34);
+    
 }
 
-.btn-1e {
+.btn-water {
+    background-color: rgb(110, 180, 207);
+    z-index: 1;
+    border: none;
+    color: rgb(34, 34, 34);
+}
+
+.btn-lava {
+    background-color: rgb(207, 110, 110);
+    z-index: 1;
+    border: none;
+    color: rgb(34, 34, 34);
+}
+
+.btn-sun {
+    background-color: rgb(207, 157, 110);
+    z-index: 1;
+    border: none;
+    color: rgb(34, 34, 34);
+}   
+
+.btn-black {
+    background-color: rgb(48, 48, 48);
+    z-index: 1;
+    border: none;
+    color: rgb(240, 240, 240);
+}
+
+.btn-white {
+    background-color: rgb(202, 202, 202);
+    z-index: 1;
+    border: none;
+    color: rgb(34, 34, 34);
+}
+
+.btn-box-text {
     overflow: hidden;
 }
 
-.btn-1e:after {
+.btn-box-text:after {
     width: 100%;
     height: 0;
-    top: 50%;
-    left: 50%;
-    background: red;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.61);
     opacity: 0;
-    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-40deg);
 }
 
-.btn-1e:hover,
-.btn-1e:active {
-    color: white;
-}
 
-.btn-1e:hover:after {
-    height: 150%;
+.btn-box-text:hover:after {
+    height: 100%;
     opacity: 1;
 }
 
-.btn-1e:active:after {
-    height: 300%;
-    opacity: 1;
+.btn-box-text:active:after {
+    height: 160%;
 }
 
 /* button end */
