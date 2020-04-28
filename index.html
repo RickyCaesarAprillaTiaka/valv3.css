@@ -9,77 +9,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- asset -->
     <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/Components++/Slider/Slider.css">
+    <link rel="stylesheet" href="asset/Components++/Navbang-responsive/Navbang-responsive.css">
     <link rel="stylesheet" href="asset/custom.css">
+
+
     <!-- asset end -->
 </head>
 
-<body>
+<body onmousewheel="autoNav()">
+    <div id="bg"></div>
+    <button id="openNav" type="button" class="btn-respon-black" onclick="openNav()">
+        +
+    </button>
+    <!-- <button id="closeNav" type="button" class="btn-navbang-respon-black" onclick="closeNav()">
+        MENU
+    </button> -->
+    <nav id="navbang-respon" class="navbang-respon">
+        <a href="" class="navbang-title-respon">
+            8-Site
+        </a>
+        <ul class="navbang-link-respon">
+            <li>
+                <a href="">test</a>
+            </li>
+            <li>
+                <a href="#">teisdfjdsijst</a>
+            </li>
+        </ul>
+    </nav>
     <!-- Navbar -->
     <nav class="navbang i-center" style="background-color: gainsboro;">
-        <a class="navbang-title marg1">
-            Home
+        <a href="" class="navbang-title marg1">
+            8-Site
         </a>
-        <ul class="navbang-link margauto-r">
+        <ul class="navbang-link t-size2 margauto-r">
             <li>
-                <a class="t-black" href="https:/www.google.com">
-                    Ricky Caesar Aprilla Tiaka
+                <a href="https:/www.google.com">
+                    Home
                 </a>
             </li>
             <li>
-                <a class="t-black" href="https:/www.google.com">
-                    google
+                <a href="https:/www.google.com">
+                    News
                 </a>
             </li>
         </ul>
-        
+
     </nav>
+
     <!-- Navbar end -->
 
     <!-- content -->
-    
-    <div class="gap marg2-t marg2-b">
-        <div class="field field-content field-box field-title-box">
-            <div class="raw marg2">
-                <div class="cal3">
-                    <h1>Title Content</h1>
-                    <div class="divider" style="background-color: black;"></div>
-                    <div class="marg1-t">
-                        <button class="btn btn-grass btn-box-text">News</button>
-                        <button class="btn btn-lava btn-box-text">Games</button> 
+
+    <div class="gap">
+        <div>
+            <div id="field1" class="banner banner-box banner-title marg2-t marg2-b slider fade">
+                <div class="raw marg2">
+                    <div class="cal4">
+                        <h1>Top 10 Pixel Game</h1>
+                        <div class="divider-black"></div>
+                        <!-- <div class="marg3-t"> -->
+                        <a class="tag-lava">Pixel</a>
+                        <a class="tag-water">Games</a>
+                        <a class="tag-black">+</a>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="raw marg1 marg4-t just-end">
+                    <div class="cal6 padd1 t-right t-white"
+                        style="background-color: rgba(66, 66, 66, 0.685); border-radius: 5px;">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum praesentium aspernatur
+                            minima sit aliquid sequi ipsum nisi hic dolores corrupti, voluptatem doloribus maxime ullam,
+                            itaque animi reprehenderit architecto non.</p>
+                        <div class="divider-white"></div>
+                        <h4>#WorkFromHome</h4>
+                        <div class="marg2-t">
+
+                            <button class="btn btn-grass btn-box-text">Grass</button>
+                            <button class="btn btn-water btn-box-text">Water</button>
+                            <button class="btn btn-lava btn-box-text">Lava</button>
+                            <button class="btn btn-sun btn-box-text">Sun</button>
+                            <button class="btn btn-black btn-box-text marg2-t">Black</button>
+                            <button class="btn btn-white btn-box-text marg2-t">White</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="raw marg1 marg4-t just-end">
-                <div class="cal6 padd1 t-right t-white" style="background-color: rgba(66, 66, 66, 0.685); border-radius: 5px;">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum praesentium aspernatur minima sit aliquid sequi ipsum nisi hic dolores corrupti, voluptatem doloribus maxime ullam, itaque animi reprehenderit architecto non.</p>
-                    <div class="divider" style="background-color: white;"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt pariatur excepturi mollitia ducimus ut culpa aliquam similique asperiores, quibusdam corporis, consequatur obcaecati ex labore, eius sit! Accusantium, numquam debitis.</p>
-                    <div class="marg2-t">
-                        <button class="btn btn-grass btn-box-text">Grass</button>
-                        <button class="btn btn-lava btn-box-text">Lava</button>
-                        <button class="btn btn-water btn-box-text">Water</button>
-                        <button class="btn btn-sun btn-box-text">Sun</button>
-                        <button class="btn btn-black btn-box-text marg2-t">Black</button>
-                        <button class="btn btn-white btn-box-text marg2-t">White</button>
+
+            <div id="field2" class="banner banner-box banner-title marg2-t marg2-b slider fade">
+                <div class="raw marg2">
+                    <div class="cal4">
+                        <h1>Top 5 Pixel Game</h1>
+                        <div class="divider-black"></div>
+                        <!-- <div class="marg3-t"> -->
+                        <a class="tag-lava">Pixel</a>
+                        <a class="tag-water">Games</a>
+                        <a class="tag-black">+</a>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+
+                <div class="raw marg1 marg4-t just-end">
+                    <div class="cal6 padd1 t-right t-white"
+                        style="background-color: rgba(66, 66, 66, 0.685); border-radius: 5px;">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum praesentium aspernatur
+                            minima sit aliquid sequi ipsum nisi hic dolores corrupti, voluptatem doloribus maxime ullam,
+                            itaque animi reprehenderit architecto non.</p>
+                        <div class="marg2-t">
+                            <button class="btn btn-grass btn-box-text">Grass</button>
+                            <button class="btn btn-water btn-box-text">Water</button>
+                            <button class="btn btn-lava btn-box-text">Lava</button>
+                            <button class="btn btn-sun btn-box-text">Sun</button>
+                            <button class="btn btn-black btn-box-text marg2-t">Black</button>
+                            <button class="btn btn-white btn-box-text marg2-t">White</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
+            <div id="field3" class="banner banner-box banner-title marg2-t marg2-b slider fade">
+                <div class="raw marg2">
+                    <div class="cal4">
+                        <h1>Top 20 Pixel Game</h1>
+                        <div class="divider-black"></div>
+                        <!-- <div class="marg3-t"> -->
+                        <a class="tag-lava">Pixel</a>
+                        <a class="tag-water">Games</a>
+                        <a class="tag-black">+</a>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+
+                <div class="raw marg1 marg4-t just-end">
+                    <div class="cal6 padd1 t-right t-white"
+                        style="background-color: rgba(66, 66, 66, 0.685); border-radius: 5px;">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum praesentium aspernatur
+                            minima sit aliquid sequi ipsum nisi hic dolores corrupti, voluptatem doloribus maxime ullam,
+                            itaque animi reprehenderit architecto non.</p>
+                        <div class="divider-white"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt pariatur excepturi
+                            mollitia ducimus ut culpa aliquam similique asperiores, quibusdam corporis, consequatur
+                            obcaecati ex labore, eius sit! Accusantium, numquam debitis.</p>
+                        <div class="marg2-t">
+                            <button class="btn btn-grass btn-box-text">Grass</button>
+                            <button class="btn btn-water btn-box-text">Water</button>
+                            <button class="btn btn-lava btn-box-text">Lava</button>
+                            <button class="btn btn-sun btn-box-text">Sun</button>
+                            <button class="btn btn-black btn-box-text marg2-t">Black</button>
+                            <button class="btn btn-white btn-box-text marg2-t">White</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-center" id="btnSlide">
+            </div>
+        </div>
+
+        <div class="field-black t-white marg2-t marg2-b padd1">
+            <h1 class="t-center">
+                Welcome
+            </h1>
+            <div class="divider-white"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium ullam vitae. Odit nobis
+                numquam cupiditate eaque cumque ratione? Dignissimos omnis voluptate magni nulla doloribus dolorem quas
+                at quos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequatur animi nulla?
+                Veritatis est illum corrupti tempora dolore magnam modi dolor natus ratione, suscipit ducimus neque
+                culpa quia eius quos?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, unde saepe debitis, minus, repellat
+                maiores praesentium odit eius dolores voluptatibus beatae voluptate ab est neque eaque eum tempora
+                adipisci amet.</p>
+            <br>
+            <div class="raw-rev">
+                <div class="cal3 t-right padd1">
+                    <img src="asset/1.png" class="img-right" style="width: 100%;" alt="">
+                    <i class="t-size1">source:
+                        <a target="_blank" class="t-white"
+                            href="https://ansimuz.itch.io/cyberpunk-street-environment?download">https://ansimuz.itch.io/cyberpunk-street-environment?download</a>
+                    </i>
+                </div>
+                <div class="calauto marg1-r">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, totam deleniti veniam
+                        vel ad ipsum voluptatum est, placeat magnam asperiores, et aliquid doloremque maxime
+                        voluptatibus. Eos id ex sint dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Iusto culpa, deleniti accusantium deserunt voluptatem quidem sed perspiciatis voluptatum neque,
+                        perferendis consequatur ab omnis a aliquid ea minus facere iure odio! Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Dolorum cum iste quo blanditiis eum reiciendis sunt magni
+                        neque expedita quasi placeat nisi molestiae doloribus ullam ducimus similique, debitis ipsam
+                        consequatur.</p>
+                </div>
+            </div>
+            <br>
+            <div class="raw">
+                <div class="cal4 padd1">
+                    <img src="asset/2.png" style="width: 100%;" alt="">
+                    <i class="t-size1">source:
+                        <a target="_blank" class="t-white"
+                            href="#">https://ansimuz.itch.io/cyberpunk-street-environment?download</a>
+                    </i>
+                </div>
+                <div class="calauto">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta officiis quam at voluptas id
+                        quibusdam quasi exercitationem unde aut sunt eaque numquam deserunt, officia voluptatibus vel
+                        itaque autem iste tempore.</p>
+                </div>
+            </div>
+            <div class="divider-white"></div>
+            <div class="raw">
+                <div class="cal12 t-center padd1">
+                    <img class="img-center" src="asset/3.png" style="width: 50vh; max-width: 100%;" alt="">
+                    <i class="t-size1">source:
+                        <a target="_blank" class="t-white"
+                            href="#">https://ansimuz.itch.io/cyberpunk-street-environment?download</a>
+                    </i>
+                </div>
+                <div class="cal4">
+                    <p class="padd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, eum harum ex
+                        quisquam in enim cupiditate earum delectus nihil sequi quam doloremque voluptatum ea. Tenetur
+                        possimus nemo ut reprehenderit?</p>
+                </div>
+                <div class="cal4">
+                    <p class="padd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum distinctio
+                        nulla accusantium, enim neque culpa sapiente sed! Dolorum aliquid deleniti totam repellendus
+                        sunt quos doloribus ratione distinctio est ipsum.</p>
+                </div>
+                <div class="cal4">
+                    <p class="padd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facilis tenetur
+                        eius a nihil dolorem qui dolore facere debitis aut delectus maxime consequuntur impedit
+                        cupiditate repellendus placeat, molestiae provident corporis.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="ungap" style="background-color: rgb(97, 97, 97);">
         <div class="raw padd1">
             <div class="cal4">
-                <p class="t-white t-size2 t-center">about</p>
+                <!-- <p id="demo"></p> -->
+                <p class="t-white t-size4 t-center">about</p>
                 <div class="divider" style="background-color:white;"></div>
                 <p class="t-white">hahahah</p>
             </div>
             <div class="cal4">
-                <p class="t-white t-size2 t-center">link</p>
+                <p class="t-white t-size4 t-center">link</p>
             </div>
-            <div class="cal4 t-white t-size2 t-center">
+            <div class="cal4 t-white t-size4 t-center">
                 <p>contact</p>
             </div>
         </div>
@@ -88,3 +266,5 @@
 </body>
 
 </html>
+<script src="asset/Components++/Slider/Slider.js"></script>
+<script src="asset/Components++/Navbang-responsive/Navbang-responsive.js"></script>

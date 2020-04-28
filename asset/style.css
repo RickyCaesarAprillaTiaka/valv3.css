@@ -26,11 +26,30 @@ html {
 /* font family end */
 
 /* item align */
+
 .i-center {
     align-items: center;
 }
 
 /* item align end */
+
+/* image align */
+.img-left {
+    display: block;
+    margin-right: auto;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-right {
+    display: block;
+    margin-left: auto;
+}
+/* image align end */
 
 /* text align */
 
@@ -51,15 +70,23 @@ html {
 /* text size */
 
 .t-size1 {
-    font-size: 24px;
+    font-size: 14px;
 }
 
 .t-size2 {
-    font-size: 28px;
+    font-size: 18px;
 }
 
 .t-size3 {
-    font-size: 32px;
+    font-size: 22px;
+}
+
+.t-size4 {
+    font-size: 26px;
+}
+
+.t-size5 {
+    font-size: 30px;
 }
 
 /* text size end */
@@ -74,16 +101,49 @@ html {
     color: white;
 }
 
+a.t-white:hover  {
+    color: rgb(202, 202, 202);
+}
+
 /* text color end */
 
 /* GRID */
 
+/* raw */
+
 .raw {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
+.raw-rev {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
 
+.raw-cal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.raw-cal-rev {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+/* raw end */
+.cal1, .cal2, .cal3, .cal4, .cal5, .cal6, .cal7, .cal8, .cal9, .cal10, .cal11, .cal12, .col,
+.calauto, .calsm-1, .calsm-2, .calsm-3, .calsm-4, .calsm-5, .calsm-6, .calsm-7, .calsm-8, .calsm-9, .calsm-10, .calsm-11, .calsm-12, .calsm,
+.calsm-auto, .calmd-1, .calmd-2, .calmd-3, .calmd-4, .calmd-5, .calmd-6, .calmd-7, .calmd-8, .calmd-9, .calmd-10, .calmd-11, .calmd-12, .calmd,
+.calmd-auto, .callg-1, .callg-2, .callg-3, .callg-4, .callg-5, .callg-6, .callg-7, .callg-8, .callg-9, .callg-10, .callg-11, .callg-12, .callg,
+.callg-auto, .calxl-1, .calxl-2, .calxl-3, .calxl-4, .calxl-5, .calxl-6, .calxl-7, .calxl-8, .calxl-9, .calxl-10, .calxl-11, .calxl-12, .calxl,
+.calxl-auto {
+  position: relative;
+  width: 100%;
+}
 .cal1 {
     width: 8.33%;
 }
@@ -132,9 +192,19 @@ html {
     width: 100%;
 }
 
+.calauto {
+    -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+    max-width: auto;
+}
+
 @media only screen and (max-width: 768px) {
     [class*="cal"] {
         width: 100%;
+        margin-bottom: 1%;
     }
 }
 
@@ -470,16 +540,26 @@ html {
 /* navbang component */
 
 .navbang-title {
-    display: inline-block;
-    font-size: 2rem;
-    line-height: inherit;
-    white-space: nowrap;
+    color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
 }
 
 .navbang-link {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbang-link {
+        display: none;
+    }
+
+    .navbang-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .navbang-link li {
@@ -494,49 +574,90 @@ html {
 .navbang-link a {
     text-decoration: none;
     padding: 2.5px 5px;
+    color: rgb(80, 80, 80);
+}
+
+.navbang-link a:hover {
+    color: black;
 }
 
 /* navbang component end */
 
 /* navbang end */
 
-/* field */
-.field-content {
+/* banner */
+.banner {
     display: grid;
     border-radius: 5px;
     background: none;
     position: relative;
 }
 
-.field-content:after {
-    content: 'test';
+.banner:after {
+    content: '';
     position: absolute;
     z-index: -1;
     transition: all 0.2s;
 }
 
-.field-box {
+.banner-box {
     z-index: 1;
     box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
-    background-image: url('2.png');
     background-size: cover;
 }
 
-.field-title-box {
+.banner-box-grass {
+    z-index: 1;
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    background-color: rgb(146, 207, 110);
+}
+
+.banner-box-water {
+    z-index: 1;
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    background-color: rgb(110, 180, 207);
+}
+
+.banner-box-lava {
+    z-index: 1;
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    background-color: rgb(207, 110, 110);
+}
+
+.banner-box-sun {
+    z-index: 1;
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    background-color: rgb(207, 157, 110);
+}
+
+.banner-box-black {
+    z-index: 1;
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    background-color: rgb(48, 48, 48);
+}
+
+.banner-box-white {
+    z-index: 1;
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    background-color: rgb(202, 202, 202);
+}
+
+.banner-title {
     overflow: hidden;
 }
 
-.field-title-box:after {
+.banner-title:after {
     top: -10px;
     width: 150vw;
     height: 40rem;
-    background: rgba(255, 255, 255, 0.644);
-    filter: drop-shadow(8px 8px 10px rgb(7, 7, 7));
+    background: rgba(216, 216, 216, 0.644);
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    /* filter: drop-shadow(8px 8px 10px rgb(7, 7, 7)); */
     transform: translateX(-50%) translateY(-50%) rotate(-30deg);
 }
 
 @media only screen and (max-width: 768px) {
-    .field-title-box:after {
+    .banner-title:after {
         top: -17%;
         width: 190vw;
         height: 10.5rem;
@@ -544,17 +665,108 @@ html {
     }
 }
 
+/* banner end */
+
+/* field */
+
+[class*="field-"] {
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    border-radius: 5px;
+}
+
+.field-grass {
+    background-color: rgb(146, 207, 110);
+}
+
+.field-water {
+    background-color: rgb(110, 180, 207);
+}
+
+.field-lava {
+    background-color: rgb(207, 110, 110);
+}
+
+.field-sun {
+    background-color: rgb(207, 157, 110);
+}
+
+.field-black {
+    background-color: rgb(48, 48, 48);
+}
+
+.field-white {
+    background-color: rgb(202, 202, 202);
+}
+
 /* field end */
 
 /* divider */
-.divider {
+.divider-grass {
+    display: grid;
     width: 100%;
     height: 2.5px;
     border-radius: 50px;
     opacity: 0.5;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 1.5vh;
+    margin-bottom: 1.8vh;
+    background-color: rgb(146, 207, 110);
 }
+
+.divider-water {
+    display: grid;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 50px;
+    opacity: 0.5;
+    margin-top: 1.5vh;
+    margin-bottom: 1.8vh;
+    background-color: rgb(110, 180, 207);
+}
+
+.divider-lava {
+    display: grid;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 50px;
+    opacity: 0.5;
+    margin-top: 1.5vh;
+    margin-bottom: 1.8vh;
+    background-color: rgb(207, 110, 110);
+}
+
+.divider-sun {
+    display: grid;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 50px;
+    opacity: 0.5;
+    margin-top: 1.5vh;
+    margin-bottom: 1.8vh;
+    background-color: rgb(207, 157, 110);
+}
+
+.divider-black {
+    display: grid;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 50px;
+    opacity: 0.5;
+    margin-top: 1.5vh;
+    margin-bottom: 1.8vh;
+    background-color: rgb(48, 48, 48);
+}
+
+.divider-white {
+    display: grid;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 50px;
+    opacity: 0.5;
+    margin-top: 1.5vh;
+    margin-bottom: 1.8vh;
+    background-color: rgb(202, 202, 202);
+}
+
 /* divider end */
 
 /* button*/
@@ -581,7 +793,7 @@ html {
     z-index: 1;
     border: none;
     color: rgb(34, 34, 34);
-    
+
 }
 
 .btn-water {
@@ -603,7 +815,7 @@ html {
     z-index: 1;
     border: none;
     color: rgb(34, 34, 34);
-}   
+}
 
 .btn-black {
     background-color: rgb(48, 48, 48);
@@ -644,5 +856,97 @@ html {
 }
 
 /* button end */
+
+/* tag */
+
+[class*="tag-"] {
+
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    transition: color 0.1s;
+    cursor: pointer;
+    border: none;
+}
+
+.tag-grass {
+    background-color: rgb(146, 207, 110);
+    color: rgb(34, 34, 34);
+
+}
+
+.tag-grass:hover {
+    color: white;
+}
+
+.tag-grass:active {
+    color: rgb(202, 202, 202);
+}
+
+.tag-water {
+    background-color: rgb(110, 180, 207);
+    color: rgb(34, 34, 34);
+}
+
+.tag-water:hover {
+    color: white;
+}
+
+.tag-water:active {
+    color: rgb(202, 202, 202);
+}
+
+.tag-lava {
+    background-color: rgb(207, 110, 110);
+    color: rgb(34, 34, 34);
+}
+
+.tag-lava:hover {
+    color: white;
+}
+
+.tag-lava:active {
+    color: rgb(202, 202, 202);
+}
+
+.tag-sun {
+    background-color: rgb(207, 157, 110);
+    color: rgb(34, 34, 34);
+}
+
+.tag-sun:hover {
+    color: white;
+}
+
+.tag-sun:active {
+    color: rgb(202, 202, 202);
+}
+
+.tag-black {
+    background-color: rgb(48, 48, 48);
+    color: rgb(240, 240, 240);
+}
+
+.tag-black:hover {
+    color: rgb(202, 202, 202);
+}
+
+.tag-black:active {
+    color: white;
+}
+
+.tag-white {
+    background-color: rgb(202, 202, 202);
+    color: rgb(34, 34, 34);
+}
+
+.tag-white:hover {
+    color: white;
+}
+
+.tag-white:active {
+    color: rgb(202, 202, 202);
+}
+
+/* tag end */
 
 /*component end*/
