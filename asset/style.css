@@ -98,6 +98,10 @@ html {
     color: black;
 }
 
+a.t-black:hover {
+    color: rgb(70, 70, 70);
+}
+
 .t-white {
     color: white;
 }
@@ -188,9 +192,7 @@ a.t-white:hover {
 }
 
 .calauto {
-    -ms-flex-preferred-size: 0;
     flex-basis: 0;
-    -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
     max-width: auto;
@@ -529,13 +531,29 @@ a.t-white:hover {
 /* navbang */
 
 .navbang {
-    display: flex;
+    display: flex; 
+    transition: 0.5s all ease-in-out;
+}
+
+.fixed-nav {
+    z-index: 3;
+    display: flex; 
+    top: -100;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
 }
 
 /* navbang component */
 
-.navbang-title {
+.navbang-title.title-black {
     color: black;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.navbang-title.title-white {
+    color: white;
     text-decoration: none;
     font-size: 2.5rem;
 }
@@ -569,18 +587,32 @@ a.t-white:hover {
 .navbang-link a {
     text-decoration: none;
     padding: 2.5px 5px;
+    
+}
+
+.navbang-link.link-black a {
     color: rgb(80, 80, 80);
 }
 
-.navbang-link a:hover {
+.navbang-link.link-black a:hover {
     color: black;
 }
 
+.navbang-link.link-white a {
+    
+    color: rgb(202, 202, 202);
+}
+
+.navbang-link.link-white a:hover {
+    color: white;
+}
+   
 /* navbang component end */
 
 /* navbang end */
 
 /* banner */
+
 .banner {
     display: grid;
     border-radius: 5px;
@@ -588,8 +620,26 @@ a.t-white:hover {
     position: relative;
     margin-bottom: 2%;
     margin-top: 2%;
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    z-index: 1;
 }
 
+.banner-content {
+    background-color: rgba(66, 66, 66, 0.685);
+    border-radius: 5px;
+    text-align: end;
+    color: white;
+    padding: 1%;
+    width: 40vw;
+    min-height: 150px;
+}
+
+.banner-content p {
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
 .banner:after {
     content: '';
     position: absolute;
@@ -598,44 +648,30 @@ a.t-white:hover {
 }
 
 .banner-box {
-    z-index: 1;
-    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
     background-size: cover;
 }
 
 .banner-box-grass {
-    z-index: 1;
-    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
     background-color: rgb(146, 207, 110);
 }
 
 .banner-box-water {
-    z-index: 1;
-    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
     background-color: rgb(110, 180, 207);
 }
 
 .banner-box-lava {
-    z-index: 1;
-    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
     background-color: rgb(207, 110, 110);
 }
 
 .banner-box-sun {
-    z-index: 1;
-    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
     background-color: rgb(207, 157, 110);
 }
 
 .banner-box-black {
-    z-index: 1;
-    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
     background-color: rgb(48, 48, 48);
 }
 
 .banner-box-white {
-    z-index: 1;
-    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
     background-color: rgb(202, 202, 202);
 }
 
@@ -649,7 +685,6 @@ a.t-white:hover {
     height: 40rem;
     background: rgba(216, 216, 216, 0.644);
     box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
-    /* filter: drop-shadow(8px 8px 10px rgb(7, 7, 7)); */
     transform: translateX(-50%) translateY(-50%) rotate(-30deg);
 }
 
@@ -743,7 +778,7 @@ a.t-white:hover {
 /* field end */
 
 /* divider */
-.divider-grass {
+[class*='divider-'] {
     display: grid;
     width: 100%;
     height: 2.5px;
@@ -751,61 +786,30 @@ a.t-white:hover {
     opacity: 0.5;
     margin-top: 1.5vh;
     margin-bottom: 1.8vh;
+}
+
+.divider-grass {
+
     background-color: rgb(146, 207, 110);
 }
 
 .divider-water {
-    display: grid;
-    width: 100%;
-    height: 2.5px;
-    border-radius: 50px;
-    opacity: 0.5;
-    margin-top: 1.5vh;
-    margin-bottom: 1.8vh;
     background-color: rgb(110, 180, 207);
 }
 
 .divider-lava {
-    display: grid;
-    width: 100%;
-    height: 2.5px;
-    border-radius: 50px;
-    opacity: 0.5;
-    margin-top: 1.5vh;
-    margin-bottom: 1.8vh;
     background-color: rgb(207, 110, 110);
 }
 
 .divider-sun {
-    display: grid;
-    width: 100%;
-    height: 2.5px;
-    border-radius: 50px;
-    opacity: 0.5;
-    margin-top: 1.5vh;
-    margin-bottom: 1.8vh;
     background-color: rgb(207, 157, 110);
 }
 
 .divider-black {
-    display: grid;
-    width: 100%;
-    height: 2.5px;
-    border-radius: 50px;
-    opacity: 0.5;
-    margin-top: 1.5vh;
-    margin-bottom: 1.8vh;
     background-color: rgb(48, 48, 48);
 }
 
 .divider-white {
-    display: grid;
-    width: 100%;
-    height: 2.5px;
-    border-radius: 50px;
-    opacity: 0.5;
-    margin-top: 1.5vh;
-    margin-bottom: 1.8vh;
     background-color: rgb(202, 202, 202);
 }
 
@@ -821,6 +825,8 @@ a.t-white:hover {
     cursor: pointer;
     background: none;
     position: relative;
+    z-index: 1;
+    border: none;
 }
 
 .btn:after {
@@ -832,44 +838,32 @@ a.t-white:hover {
 
 .btn-grass {
     background-color: rgb(146, 207, 110);
-    z-index: 1;
-    border: none;
     color: rgb(34, 34, 34);
 
 }
 
 .btn-water {
     background-color: rgb(110, 180, 207);
-    z-index: 1;
-    border: none;
     color: rgb(34, 34, 34);
 }
 
 .btn-lava {
     background-color: rgb(207, 110, 110);
-    z-index: 1;
-    border: none;
     color: rgb(34, 34, 34);
 }
 
 .btn-sun {
     background-color: rgb(207, 157, 110);
-    z-index: 1;
-    border: none;
     color: rgb(34, 34, 34);
 }
 
 .btn-black {
     background-color: rgb(48, 48, 48);
-    z-index: 1;
-    border: none;
     color: rgb(240, 240, 240);
 }
 
 .btn-white {
     background-color: rgb(202, 202, 202);
-    z-index: 1;
-    border: none;
     color: rgb(34, 34, 34);
 }
 
@@ -902,7 +896,6 @@ a.t-white:hover {
 /* tag */
 
 [class*="tag-"] {
-
     border-radius: 5px;
     padding: 0.5rem 1rem 0.5rem 1rem;
     transition: color 0.1s;
@@ -913,7 +906,6 @@ a.t-white:hover {
 .tag-grass {
     background-color: rgb(146, 207, 110);
     color: rgb(34, 34, 34);
-
 }
 
 .tag-grass:hover {

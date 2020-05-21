@@ -17,15 +17,34 @@
     <!-- asset end -->
 </head>
 
-<body onmousewheel="autoNav()">
+<body onmousewheel="autoNav()" onscroll="fixedNav()">
 
     <!-- Navbar -->
 
-    <nav class="navbang i-center" style="background-color: gainsboro;">
-        <a href="" class="navbang-title marg1">
+    <nav id="navbang1" class="navbang i-center" style="background-color: gainsboro;">
+        <a href="" class="navbang-title title-black marg1">
             8-Site
         </a>
-        <ul class="navbang-link t-size2 margauto-r">
+        <ul class="navbang-link link-black t-size2 margauto-r">
+            <li>
+                <a href="https:/www.google.com">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="https:/www.google.com">
+                    News
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <nav id="navbang" class="fixed-nav i-center" style="background-color: gainsboro;">
+        <a href="" class="navbang-title title-black marg1">
+            8-Site
+        </a>
+        <ul class="navbang-link link-black t-size2 margauto-r">
             <li>
                 <a href="https:/www.google.com">
                     Home
@@ -67,34 +86,34 @@
 
     <!-- content -->
 
-    
+
 
     <div class="gap">
         <!-- alert -->
-    <div class="card-alert-grass marg2-t">
-        Grass Alert
-    </div>
+        <div class="card-alert-grass marg2-t">
+            Grass Alert
+        </div>
 
-    <div class="card-alert-water marg2-t">
-        Water Alert
-    </div>
+        <div class="card-alert-water marg2-t">
+            Water Alert
+        </div>
 
-    <div class="card-alert-lava marg2-t">
-        Lava Alert
-    </div>
+        <div class="card-alert-lava marg2-t">
+            Lava Alert
+        </div>
 
-    <div class="card-alert-sun marg2-t">
-        Sun Alert
-    </div>
+        <div class="card-alert-sun marg2-t">
+            Sun Alert
+        </div>
 
-    <div class="card-alert-black marg2-t">
-        Black Alert
-    </div>
+        <div class="card-alert-black marg2-t">
+            Black Alert
+        </div>
 
-    <div class="card-alert-white marg2-t">
-        White Alert
-    </div>
-    <!-- alert end -->
+        <div class="card-alert-white marg2-t">
+            White Alert
+        </div>
+        <!-- alert end -->
         <div>
             <div id="field1" class="banner banner-box banner-title slider fade">
                 <div class="raw marg2">
@@ -108,13 +127,12 @@
                 </div>
 
                 <div class="raw marg1 marg4-t just-end">
-                    <div class="cal6 padd1 t-right t-white"
-                        style="background-color: rgba(66, 66, 66, 0.685); border-radius: 5px;">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum praesentium aspernatur
-                            minima sit aliquid sequi ipsum nisi hic dolores corrupti, voluptatem doloribus maxime ullam,
-                            itaque animi reprehenderit architecto non.</p>
+                    <div class="cal6 banner-content">
+                        <p>Xbox Series X, ketika tanggal 7 mei 2020 kemarin Xbox memberitahukan beberapa game 3rd party
+                            yang nantinya akan di optimalkan khusus untuk konsol terbaru mereka yaitu Xbox Series X
+                            selama presentasi pertamanya. Tapi tanpa disadari kita juga sebenarnya telah di kasih tahu
+                            tentang seperti apa suara dan tampilan booting dari konsol next-gen yang satu ini.</p>
                         <div class="divider-white"></div>
-                        <h4>#WorkFromHome</h4>
                         <div class="marg2-t">
 
                             <button class="btn btn-grass btn-box">Grass</button>
@@ -141,11 +159,12 @@
                 </div>
 
                 <div class="raw marg1 marg4-t just-end">
-                    <div class="cal6 padd1 t-right t-white"
-                        style="background-color: rgba(66, 66, 66, 0.685); border-radius: 5px;">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum praesentium aspernatur
-                            minima sit aliquid sequi ipsum nisi hic dolores corrupti, voluptatem doloribus maxime ullam,
-                            itaque animi reprehenderit architecto non.</p>
+                    <div class="cal6 banner-content">
+                        <p>Fortnite merupakan salah satu game shooter battle royale yang mengusung tema fantasi. Namun,
+                            yang membuatnya semakin terkenal baru-baru ini adalah kemunculan event konser musik virtual
+                            baru-baru ini. Dimana konser virtual tersebut dihadiri jutaan orang, tidak heran jika
+                            fortnite melakukan hal tersebut itu lagi.</p>
+                        <div class="divider-white"></div>
                         <div class="marg2-t">
                             <button class="btn btn-grass btn-box">Grass</button>
                             <button class="btn btn-water btn-box">Water</button>
@@ -170,15 +189,12 @@
                 </div>
 
                 <div class="raw marg1 marg4-t just-end">
-                    <div class="cal6 padd1 t-right t-white"
-                        style="background-color: rgba(66, 66, 66, 0.685); border-radius: 5px;">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo cum praesentium aspernatur
-                            minima sit aliquid sequi ipsum nisi hic dolores corrupti, voluptatem doloribus maxime ullam,
-                            itaque animi reprehenderit architecto non.</p>
+                    <div class="cal6 banner-content">
+                        <p>Tidak dapat dipungkiri bahwa Animal Crossing: New Horizons kini menjadi salah satu game yang
+                            paling trending di dunia. Gameplay yang ringan, visual yang menarik, serta karakter yang
+                            imut membuat game ini tidak hanya dinikmati oleh para gamer enthusiast saja, namun juga
+                            digemari oleh banyak gamer kasual.</p>
                         <div class="divider-white"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt pariatur excepturi
-                            mollitia ducimus ut culpa aliquam similique asperiores, quibusdam corporis, consequatur
-                            obcaecati ex labore, eius sit! Accusantium, numquam debitis.</p>
                         <div class="marg2-t">
                             <button class="btn btn-grass btn-box">Grass</button>
                             <button class="btn btn-water btn-box">Water</button>
@@ -230,7 +246,6 @@
                         Maiores molestias quia exercitationem.</p>
                 </div>
             </div>
-            <br>
             <div class="raw">
                 <div class="cal4 padd1">
                     <img src="asset/2.png" style="width: 100%;" alt="">
@@ -248,7 +263,7 @@
             <div class="divider-white"></div>
             <div class="raw">
                 <div class="cal12 t-center padd1">
-                    <img class="img-center" src="asset/3.png" style="width: 50vh; max-width: 100%;" alt="">
+                    <img class="img-center" src="asset/3.png" style="width: 70vh; max-width: 100%;" alt="">
                     <i class="t-size1">source:
                         <a target="_blank" class="t-white"
                             href="#">https://ansimuz.itch.io/cyberpunk-street-environment?download</a>
@@ -294,3 +309,15 @@
 </html>
 <script src="asset/Components++/Slider/Slider.js"></script>
 <script src="asset/Components++/Navbang-responsive/Navbang-responsive.js"></script>
+<script>
+    
+    function fixedNav() {
+        if (document.body.scrollTop > 40) {
+            document.getElementById('navbang').style.top = 0;
+            document.getElementById('navbang1').style.opacity = 0;
+        } else {
+            document.getElementById('navbang').style.top = -100;
+            document.getElementById('navbang1').style.opacity = 1;
+        }
+    }
+</script>
