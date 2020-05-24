@@ -1,12 +1,15 @@
 #field1 {
     background-image: url('2.png');
     background-size: cover;
+    background-position: center;
 }
 #field2 {
     background-image: url('1.png');
     background-size: cover;
+    background-position: center;
 }
 #field3 {
     background-image: url('3.png');
     background-size: cover;
+    background-position: center;
 }

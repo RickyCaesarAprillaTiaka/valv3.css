@@ -9,13 +9,13 @@
     margin: 0;
 }
 
-/* font family */
+/* Font Family */
 
 @font-face {
     font-family: 'Æ Systematic TT BRK';
-    /* font name you can see from your .tff file */
+    /* font name you can use it from your .tff file */
     src: url('aesymatt.ttf');
-    /* <- from file font ttf, you can change it with your font */
+    /* from file font ttf, you can change it with your font */
 }
 
 html {
@@ -23,17 +23,18 @@ html {
     /* use font on html */
 }
 
-/* font family end */
+/* Font Family End */
 
-/* item align */
+/* Item Align */
 
 .i-center {
     align-items: center;
 }
 
-/* item align end */
+/* Item Align End */
 
-/* image align */
+/* Image Align */
+
 .img-left {
     display: block;
     margin-right: auto;
@@ -50,9 +51,31 @@ html {
     margin-left: auto;
 }
 
-/* image align end */
+/* Image Align End */
 
-/* text align */
+/* Image Style */
+
+.img-size1 {
+    width: 200px;
+    height: 200px;
+}
+
+.img-size2 {
+    width: 400px;
+    height: 400px;
+}
+
+.img-circ {
+    border-radius: 50%;
+}
+
+.img-roun {
+    border-radius: 15px;
+}
+
+/* Iamge Style End */
+
+/* Text Align */
 
 .t-right {
     text-align: right;
@@ -66,9 +89,9 @@ html {
     text-align: left;
 }
 
-/* text align end */
+/* Text Align End */
 
-/* text size */
+/* Text Size */
 
 .t-size1 {
     font-size: 14px;
@@ -90,12 +113,13 @@ html {
     font-size: 30px;
 }
 
-/* text size end */
+/* Text Size End */
 
-/* text color */
+/* Text Color */
 
 .t-black {
     color: black;
+    transition: color 0.3s ease-in-out;
 }
 
 a.t-black:hover {
@@ -104,17 +128,18 @@ a.t-black:hover {
 
 .t-white {
     color: white;
+    transition: color 0.3s ease-in-out;
 }
 
 a.t-white:hover {
     color: rgb(202, 202, 202);
 }
 
-/* text color end */
+/* Text Color End */
 
 /* GRID */
 
-/* raw */
+/* Raw */
 
 .raw {
     display: flex;
@@ -140,55 +165,68 @@ a.t-white:hover {
     flex-direction: column-reverse;
 }
 
-/* raw end */
+/* Raw End */
 
+/* Cal */
 
 .cal1 {
     width: 8.33%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal2 {
     width: 16.66%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal3 {
     width: 25%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal4 {
     width: 33.33%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal5 {
     width: 41.66%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal6 {
     width: 50%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal7 {
     width: 58.33%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal8 {
     width: 66.66%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal9 {
     width: 75%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal10 {
     width: 83.33%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal11 {
     width: 91.66%;
+    transition: width 0.5s ease-in-out;
 }
 
 .cal12 {
     width: 100%;
+    transition: width 0.5s ease-in-out;
 }
 
 .calauto {
@@ -196,6 +234,7 @@ a.t-white:hover {
     flex-grow: 1;
     max-width: 100%;
     max-width: auto;
+    transition: width 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {
@@ -205,9 +244,11 @@ a.t-white:hover {
     }
 }
 
-/*padding*/
+/* Cal End */
 
-/* padding 1 */
+/* Padding */
+
+/* Padding 1 */
 
 .padd1 {
     padding: 1%;
@@ -229,9 +270,9 @@ a.t-white:hover {
     padding-left: 1%;
 }
 
-/* padding 1 end */
+/* Padding 1 End */
 
-/* padding 2 */
+/* Padding 2 */
 
 .padd2 {
     padding: 2%;
@@ -253,9 +294,9 @@ a.t-white:hover {
     padding-left: 2%;
 }
 
-/* padding 2 end */
+/* Padding 2 End */
 
-/* padding 3 */
+/* Padding 3 */
 
 .padd3 {
     padding: 3%;
@@ -277,9 +318,9 @@ a.t-white:hover {
     padding-left: 3%;
 }
 
-/* padding 3 end */
+/* Padding 3 End */
 
-/* padding 4 */
+/* Padding 4 */
 
 .padd4 {
     padding: 4%;
@@ -301,9 +342,9 @@ a.t-white:hover {
     padding-left: 4%;
 }
 
-/* padding 4 end */
+/* Padding 4 End */
 
-/* padding 5 */
+/* Padding 5 */
 
 .padd5 {
     padding: 5%;
@@ -325,9 +366,9 @@ a.t-white:hover {
     padding-left: 5%;
 }
 
-/* padding 5 end */
+/* Padding 5 End */
 
-/* padding auto */
+/* Padding Auto */
 
 .paddauto-t {
     padding-top: auto;
@@ -345,13 +386,13 @@ a.t-white:hover {
     padding-left: auto;
 }
 
-/* padding auto */
+/* Padding Auto */
 
-/*padding end*/
+/* Padding End */
 
-/*margin*/
+/* Margin */
 
-/* margin 1 */
+/* Margin 1 */
 .marg1 {
     margin: 1%;
 }
@@ -372,9 +413,9 @@ a.t-white:hover {
     margin-left: 1%;
 }
 
-/* margin 1 end */
+/* Margin 1 End */
 
-/* margin 2 */
+/* Margin 2 */
 
 .marg2 {
     margin: 2%;
@@ -396,9 +437,9 @@ a.t-white:hover {
     margin-left: 2%;
 }
 
-/* margin 2 end */
+/* Margin 2 End */
 
-/* margin 3 */
+/* Margin 3 */
 
 .marg3 {
     margin: 3%;
@@ -420,9 +461,9 @@ a.t-white:hover {
     margin-left: 3%;
 }
 
-/* margin 3 end */
+/* Margin 3 End */
 
-/* margin 4 */
+/* Margin 4 */
 
 .marg4 {
     margin: 4%;
@@ -444,9 +485,9 @@ a.t-white:hover {
     margin-left: 4%;
 }
 
-/* margin 4 end */
+/* Margin 4 End */
 
-/* margin 5 */
+/* Margin 5 */
 
 .marg5 {
     margin: 5%;
@@ -468,9 +509,9 @@ a.t-white:hover {
     margin-left: 5%;
 }
 
-/* margin 5 end */
+/* Margin 5 End */
 
-/* margin auto */
+/* Margin Auto */
 
 .margauto-t {
     margin-top: auto;
@@ -488,11 +529,11 @@ a.t-white:hover {
     margin-left: auto;
 }
 
-/* margin auto end */
+/* Margin auto End */
 
-/*margin end*/
+/* Margin End */
 
-/*justify content*/
+/* Just */
 
 .just-start {
     justify-content: flex-start;
@@ -506,13 +547,13 @@ a.t-white:hover {
     justify-content: flex-end;
 }
 
-/*justify content end*/
+/* Just End*/
 
-/* GRID end */
+/* GRID End */
 
-/*component*/
+/* Component */
 
-/* gap */
+/* Gap */
 
 .gap {
     max-width: 100vw;
@@ -526,36 +567,29 @@ a.t-white:hover {
     max-width: 100vw;
 }
 
-/* gap end */
+/* Gap End */
 
-/* navbang */
+/* Navbang */
 
 .navbang {
-    display: flex; 
+    display: flex;
     transition: 0.5s all ease-in-out;
+    align-items: center;
 }
 
-.fixed-nav {
-    z-index: 3;
-    display: flex; 
-    top: -100;
-    position: fixed;
-    width: 100%;
-    transition: 0.5s all ease-in-out;
-}
+/* Navbang Component */
 
-/* navbang component */
+.navbang-title {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
 
 .navbang-title.title-black {
     color: black;
-    text-decoration: none;
-    font-size: 2.5rem;
 }
 
 .navbang-title.title-white {
     color: white;
-    text-decoration: none;
-    font-size: 2.5rem;
 }
 
 .navbang-link {
@@ -587,7 +621,7 @@ a.t-white:hover {
 .navbang-link a {
     text-decoration: none;
     padding: 2.5px 5px;
-    
+
 }
 
 .navbang-link.link-black a {
@@ -599,19 +633,99 @@ a.t-white:hover {
 }
 
 .navbang-link.link-white a {
-    
+
     color: rgb(202, 202, 202);
 }
 
 .navbang-link.link-white a:hover {
     color: white;
 }
-   
-/* navbang component end */
 
-/* navbang end */
+/* Navbang Component End */
 
-/* banner */
+/* Navbang End */
+
+/* Sidebang */
+
+.sidebang {
+    display: inline-flex;
+    margin: 1rem 0 1rem 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    width: 70%;
+    border-radius: 5px;
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebang {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sidebang li {
+        display: inline-block;
+    }
+}
+
+/* Sidebang Component */
+
+.sidebang ul {
+    list-style: none;
+}
+
+.sidebang ul li{
+    padding: 0.5rem 1rem;
+}
+
+.side-i {
+    color: black;
+    text-decoration: none;
+}
+
+/* Sidebang Component End */
+
+/* Sidebang End */
+
+/* Foot */
+
+.foot {
+    max-width: 100vw;
+}
+
+/* Foot Component */
+
+.foot-down {
+    background-color: rgba(14, 14, 14, 0.459);
+    padding-top: 0.6vh;
+    text-align: center;
+    padding-bottom: 0.6vh;
+}
+
+.foot-list {
+    list-style: none;
+}
+
+.foot-list li {
+    text-align: center;
+    margin: 1% 0 1% 0;
+}
+
+.foot-list li a {
+    text-decoration: none;
+}
+
+.foot-list li i {
+    display: inline-flex;
+}
+
+/* Foot Component End */
+
+/* Foot End */
+
+/* Banner */
 
 .banner {
     display: grid;
@@ -624,27 +738,29 @@ a.t-white:hover {
     z-index: 1;
 }
 
+.banner:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+/* Banner Component */
+
 .banner-content {
     background-color: rgba(66, 66, 66, 0.685);
     border-radius: 5px;
     text-align: end;
     color: white;
     padding: 1%;
-    width: 40vw;
     min-height: 150px;
 }
 
 .banner-content p {
     display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
-}
-.banner:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    transition: all 0.2s;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .banner-box {
@@ -676,10 +792,21 @@ a.t-white:hover {
 }
 
 .banner-title {
+    padding: 5%;
+    transition: unset;
+}
+
+.banner-title *:first-child {
+    font-weight: bold;
+    font-size: 26px;
+    min-height: 55px;
+}
+
+.banner-title-bg {
     overflow: hidden;
 }
 
-.banner-title:after {
+.banner-title-bg:after {
     top: -10px;
     width: 150vw;
     height: 40rem;
@@ -689,17 +816,21 @@ a.t-white:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .banner-title:after {
-        top: -17%;
-        width: 190vw;
-        height: 10.5rem;
-        transform: translateX(0) translateY(0) rotate(0);
+    .banner-title {
+        padding: 5%;
+        background-color: rgba(216, 216, 216, 0.644);
+    }
+
+    .banner-title-bg:after {
+        display: none;
     }
 }
 
-/* banner end */
+/* Banner Content */
 
-/* card alert */
+/* Banner End */
+
+/* Card alert */
 
 [class*="card-alert-"] {
     padding: 1%;
@@ -742,9 +873,105 @@ a.t-white:hover {
     color: rgb(138, 138, 138);
 }
 
-/* card alert end */
+/* Card Alert End */
 
-/* field */
+/* Card Box */
+
+.card-box {
+    box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
+    border-radius: 5px;
+    width: 96%;
+    transition: box-shadow 0.5s;
+    margin: 2%;
+}
+
+.card-box:hover {
+    box-shadow: rgba(24, 24, 24, 0.37) 0.1rem 0.1rem 0.5rem 0.4rem;
+}
+
+/* Card Box Component */
+
+.card-box .card-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-box a {
+    text-decoration: none;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+[class*="card-box-body-"] p:not(:last-child) {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0.5rem 0.5rem;
+}
+
+.card-box .card-title {
+    min-height: 47px;
+}
+
+[class*="card-box-body-"] a.t-black:hover {
+    color: black;
+    text-shadow: rgb(70, 70, 70) 0 0.1rem 1rem;
+}
+[class*="card-box-body-"] a.t-white:hover {
+    color: white;
+    text-shadow: rgb(202, 202, 202) 0 0.1rem 1rem;
+}
+
+[class*="card-box-body-"] a.t-black:hover {
+    color: black;
+}
+
+[class*="card-box-body-"] {
+    padding: 10px 20px;
+}
+
+[class*="card-box-body-"].no-img {
+    border-radius: 5px;
+}
+
+[class*="card-box-body-"].with-img {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-box-body-grass {
+    background-color: rgb(146, 207, 110);
+}
+
+.card-box-body-water {
+    background-color: rgb(110, 180, 207);
+}
+
+.card-box-body-lava {
+    background-color: rgb(207, 110, 110);
+}
+
+.card-box-body-sun {
+    background-color: rgb(207, 157, 110);
+}
+
+.card-box-body-black {
+    background-color: rgb(48, 48, 48);
+}
+
+.card-box-body-white {
+    background-color: rgb(202, 202, 202);
+}
+
+/* Card Box Component End */
+
+/* Card Box End */
+
+/* Field */
 
 [class*="field-"] {
     box-shadow: rgba(24, 24, 24, 0.37) 0 0.1rem 0.5rem;
@@ -775,12 +1002,15 @@ a.t-white:hover {
     background-color: rgb(202, 202, 202);
 }
 
-/* field end */
+/* Field End */
 
-/* divider */
+/* Divider */
+
 [class*='divider-'] {
     display: grid;
-    width: 100%;
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
     height: 2.5px;
     border-radius: 50px;
     opacity: 0.5;
@@ -813,9 +1043,69 @@ a.t-white:hover {
     background-color: rgb(202, 202, 202);
 }
 
-/* divider end */
+/* Divider End */
 
-/* button*/
+/* Form */
+
+.group-form {
+    display: grid;
+    margin: 1%;
+}
+
+/* Form Component End */
+
+.group-form label {
+    padding: 1%;
+}
+
+.group-form label .req {
+    color: rgb(207, 110, 110);
+    font-weight: bold;
+}
+
+.group-form input {
+    font-family: 'Æ Systematic TT BRK';
+    outline: none;
+    font-size: 22px;
+    padding: 5px;
+    border: 2px rgb(202, 202, 202) solid;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+.group-form input:focus, .group-form [class*='-form-border']:focus {
+    border: 2px rgb(48, 48, 48) solid;
+}
+
+.group-form input.grass-form-border {
+    border: 2px rgb(146, 207, 110) solid;
+}
+
+.group-form input.water-form-border {
+    border: 2px rgb(110, 180, 207) solid;
+}
+
+.group-form input.lava-form-border {
+    border: 2px rgb(207, 110, 110) solid;
+}
+
+.group-form input.sun-form-border {
+    border: 2px rgb(207, 157, 110) solid;
+}
+
+.group-form p {
+    font-size: 22px;
+    padding: 5px;
+    border: 2px rgb(202, 202, 202) solid;
+    border-radius: 5px;
+}
+
+/* Form Component End */
+
+/* Form End */
+
+/* Button*/
+
 .btn {
     font-family: 'Æ Systematic TT BRK';
     outline: none;
@@ -891,9 +1181,9 @@ a.t-white:hover {
     height: 160%;
 }
 
-/* button end */
+/* Button End */
 
-/* tag */
+/* Tag */
 
 [class*="tag-"] {
     border-radius: 5px;
@@ -981,6 +1271,41 @@ a.t-white:hover {
     color: rgb(202, 202, 202);
 }
 
-/* tag end */
+/* Tag End */
 
-/*component end*/
+/* Pagination */
+
+.pagination {
+    display: flex;
+    list-style: none;
+}
+
+.page-item {
+    padding: 0.9rem 0 0.9rem 0;
+    margin: 5px 2px 5px 2px;
+    border-radius: 5px;
+}
+
+.page-item.active {
+    background-color: rgb(202, 202, 202);
+}
+
+.page-item .page-link {
+    padding: 0.9rem 1rem 0.9rem 1rem;
+    z-index: 2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.6s ease;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.page-item .page-link:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+/* Pagination end */
+
+/* Component End*/

@@ -8,11 +8,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- asset -->
+
     <link rel="stylesheet" href="asset/style.css">
     <link rel="stylesheet" href="asset/Components++/Slider/Slider.css">
     <link rel="stylesheet" href="asset/Components++/Navbang-responsive/Navbang-responsive.css">
+    <link rel="stylesheet" href="asset/Components++/Navbang-fixed/Navbang-fixed.css">
     <link rel="stylesheet" href="asset/custom.css">
-
 
     <!-- asset end -->
 </head>
@@ -21,38 +22,36 @@
 
     <!-- Navbar -->
 
-    <nav id="navbang1" class="navbang i-center" style="background-color: gainsboro;">
+    <nav id="main-navbang" class="navbang" style="background-color: gainsboro;">
         <a href="" class="navbang-title title-black marg1">
             8-Site
         </a>
         <ul class="navbang-link link-black t-size2 margauto-r">
             <li>
-                <a href="https:/www.google.com">
+                <a href="index.html">
                     Home
                 </a>
             </li>
             <li>
-                <a href="https:/www.google.com">
+                <a href="news.html">
                     News
                 </a>
             </li>
         </ul>
-
-    </nav>
-
-    <nav id="navbang" class="fixed-nav i-center" style="background-color: gainsboro;">
-        <a href="" class="navbang-title title-black marg1">
-            8-Site
-        </a>
-        <ul class="navbang-link link-black t-size2 margauto-r">
+        <ul class="navbang-link link-black t-size2 marg1-r">
             <li>
-                <a href="https:/www.google.com">
-                    Home
+                <a href="register.html">
+                    Register
                 </a>
             </li>
             <li>
-                <a href="https:/www.google.com">
-                    News
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="account.html">
+                    Account
                 </a>
             </li>
         </ul>
@@ -61,11 +60,48 @@
 
     <!-- Navbar end -->
 
+    <!-- Navbar Fixed -->
+    <nav id="second-navbang" class="fixed-navbang" style="background-color: gainsboro;">
+        <a href="" class="navbang-title title-black marg1">
+            8-Site
+        </a>
+        <ul class="navbang-link link-black t-size2 margauto-r">
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="news.html">
+                    News
+                </a>
+            </li>
+        </ul>
+        <ul class="navbang-link link-black t-size2 marg1-r">
+            <li>
+                <a href="register.html">
+                    Register
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="account.html">
+                    Account
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Fixed end -->
+
     <!-- Navbar Responsive -->
 
-    <div id="bg"></div>
+    <div id="bg" onclick="closeNav()"></div>
     <button id="openNav" type="button" class="btn-respon-black" onclick="openNav()">
-        +
+        <i class="fi-xnsuxm-plus-solid"></i>
     </button>
 
     <nav id="navbang-respon" class="navbang-respon">
@@ -74,22 +110,41 @@
         </a>
         <ul class="navbang-link-respon">
             <li>
-                <a href="">test</a>
+                <a href="index.html">
+                    Home
+                </a>
             </li>
             <li>
-                <a href="#">teisdfjdsijst</a>
+                <a href="news.html">
+                    News
+                </a>
+            </li>
+            <li>
+                <a href="register.html">
+                    Register
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="account.html">
+                    Account
+                </a>
             </li>
         </ul>
     </nav>
 
     <!-- Navbar Responsive end -->
 
-    <!-- content -->
-
-
+    <!-- Content -->
 
     <div class="gap">
-        <!-- alert -->
+
+        <!-- Alert -->
+
         <div class="card-alert-grass marg2-t">
             Grass Alert
         </div>
@@ -113,12 +168,16 @@
         <div class="card-alert-white marg2-t">
             White Alert
         </div>
-        <!-- alert end -->
+
+        <!-- Alert End -->
+
+        <!-- Slider -->
+
         <div>
-            <div id="field1" class="banner banner-box banner-title slider fade">
-                <div class="raw marg2">
-                    <div class="cal4">
-                        <h1>Top 10 Pixel Game</h1>
+            <div id="field1" class="banner banner-box banner-title-bg slider">
+                <div class="raw">
+                    <div class="cal4 banner-title">
+                        <p>Top 10 Pixel Game Top 10 Pixel Game</p>
                         <div class="divider-black"></div>
                         <a class="tag-lava">Pixel</a>
                         <a class="tag-water">Games</a>
@@ -146,9 +205,9 @@
                 </div>
             </div>
 
-            <div id="field2" class="banner banner-box banner-title marg2-t marg2-b slider fade">
-                <div class="raw marg2">
-                    <div class="cal4">
+            <div id="field2" class="banner banner-box banner-title-bg slider">
+                <div class="raw">
+                    <div class="cal4 banner-title">
                         <h1>Top 5 Pixel Game</h1>
                         <div class="divider-black"></div>
                         <a class="tag-lava">Pixel</a>
@@ -177,9 +236,9 @@
                 </div>
             </div>
 
-            <div id="field3" class="banner banner-box banner-title marg2-t marg2-b slider fade">
-                <div class="raw marg2">
-                    <div class="cal4">
+            <div id="field3" class="banner banner-box banner-title-bg slider">
+                <div class="raw">
+                    <div class="cal4 banner-title">
                         <h1>Top 20 Pixel Game</h1>
                         <div class="divider-black"></div>
                         <a class="tag-lava">Pixel</a>
@@ -194,7 +253,9 @@
                             paling trending di dunia. Gameplay yang ringan, visual yang menarik, serta karakter yang
                             imut membuat game ini tidak hanya dinikmati oleh para gamer enthusiast saja, namun juga
                             digemari oleh banyak gamer kasual.</p>
+
                         <div class="divider-white"></div>
+
                         <div class="marg2-t">
                             <button class="btn btn-grass btn-box">Grass</button>
                             <button class="btn btn-water btn-box">Water</button>
@@ -206,25 +267,36 @@
                     </div>
                 </div>
             </div>
+
             <div class="t-center" id="btnSlide">
             </div>
         </div>
 
-        <div class="field-black t-white marg2-t marg2-b padd1">
+        <!-- Slider End -->
+
+        <!-- Field -->
+
+        <div class="field-black marg2-t marg2-b t-white padd1">
             <h1 class="t-center">
                 Welcome
             </h1>
+
             <div class="divider-white"></div>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusantium ullam vitae. Odit nobis
                 numquam cupiditate eaque cumque ratione? Dignissimos omnis voluptate magni nulla doloribus dolorem quas
                 at quos odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit consequatur animi nulla?
                 Veritatis est illum corrupti tempora dolore magnam modi dolor natus ratione, suscipit ducimus neque
                 culpa quia eius quos?</p>
+
             <br>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, unde saepe debitis, minus, repellat
                 maiores praesentium odit eius dolores voluptatibus beatae voluptate ab est neque eaque eum tempora
                 adipisci amet.</p>
+
             <br>
+
             <div class="raw-rev">
                 <div class="cal3 t-right padd1">
                     <img src="asset/1.png" class="img-right" style="width: 100%;" alt="">
@@ -233,6 +305,7 @@
                             href="https://ansimuz.itch.io/cyberpunk-street-environment?download">https://ansimuz.itch.io/cyberpunk-street-environment?download</a>
                     </i>
                 </div>
+
                 <div class="calauto marg1-r">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, totam deleniti veniam
                         vel ad ipsum voluptatum est, placeat magnam asperiores, et aliquid doloremque maxime
@@ -245,7 +318,9 @@
                         dicta veniam repudiandae, eaque libero enim earum ex ea temporibus qui magni nesciunt accusamus.
                         Maiores molestias quia exercitationem.</p>
                 </div>
+
             </div>
+
             <div class="raw">
                 <div class="cal4 padd1">
                     <img src="asset/2.png" style="width: 100%;" alt="">
@@ -254,13 +329,16 @@
                             href="#">https://ansimuz.itch.io/cyberpunk-street-environment?download</a>
                     </i>
                 </div>
+
                 <div class="calauto">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta officiis quam at voluptas id
                         quibusdam quasi exercitationem unde aut sunt eaque numquam deserunt, officia voluptatibus vel
                         itaque autem iste tempore.</p>
                 </div>
             </div>
+
             <div class="divider-white"></div>
+
             <div class="raw">
                 <div class="cal12 t-center padd1">
                     <img class="img-center" src="asset/3.png" style="width: 70vh; max-width: 100%;" alt="">
@@ -269,16 +347,19 @@
                             href="#">https://ansimuz.itch.io/cyberpunk-street-environment?download</a>
                     </i>
                 </div>
+
                 <div class="cal4">
                     <p class="padd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius, eum harum ex
                         quisquam in enim cupiditate earum delectus nihil sequi quam doloremque voluptatum ea. Tenetur
                         possimus nemo ut reprehenderit?</p>
                 </div>
+
                 <div class="cal4">
                     <p class="padd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nostrum distinctio
                         nulla accusantium, enim neque culpa sapiente sed! Dolorum aliquid deleniti totam repellendus
                         sunt quos doloribus ratione distinctio est ipsum.</p>
                 </div>
+
                 <div class="cal4">
                     <p class="padd1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facilis tenetur
                         eius a nihil dolorem qui dolore facere debitis aut delectus maxime consequuntur impedit
@@ -286,38 +367,56 @@
                 </div>
             </div>
         </div>
+
+        <!-- Field End -->
+
     </div>
 
-    <div class="ungap" style="background-color: rgb(97, 97, 97);">
-        <div class="raw padd1">
-            <div class="cal4">
+    <!-- Content End -->
+
+    <!-- Foot -->
+
+    <div class="foot" style="background-color: rgb(97, 97, 97);">
+        <div class="raw padd5">
+            <div class="cal6">
                 <p class="t-white t-size4 t-center">about</p>
-                <div class="divider" style="background-color:white;"></div>
-                <p class="t-white">hahahah</p>
+                <div class="divider-white" style="background-color:white;"></div>
+                <p class="t-white"><span class="t-size3">8-Site</span> Blog for Writer, Simpler and Easier to use. More
+                    Feature is <span class="t-size3">Coming Soon</span></p>
             </div>
-            <div class="cal4">
-                <p class="t-white t-size4 t-center">link</p>
-            </div>
-            <div class="cal4 t-white t-size4 t-center">
-                <p>contact</p>
+
+            <div class="cal6">
+                <p class="t-white t-size4 t-center">contact</p>
+                <div class="divider-white" style="background-color:white;"></div>
+                <ul class="foot-list">
+                    <li>
+                        <a href="" class="t-white">
+                            <i class="fi-xnsuxm-instagram"></i>
+                            @ricky_tiaka
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="t-white">
+                            <i class="fi-xnsuxm-facebook-logo"></i>
+                            @ricky_tiaka
+                        </a>
+                    </li>
+                    <ul>
             </div>
         </div>
+
+        <div class="foot-down t-white">
+            &copy; RDev Project 2020-2021
+        </div>
     </div>
-    <!-- content end -->
+
+    <!-- Foot End -->
+
 </body>
 
 </html>
+<!-- Friconix https://friconix.com-->
+<script src="asset/Components++/Friconix/friconix.js"></script>
 <script src="asset/Components++/Slider/Slider.js"></script>
 <script src="asset/Components++/Navbang-responsive/Navbang-responsive.js"></script>
-<script>
-    
-    function fixedNav() {
-        if (document.body.scrollTop > 40) {
-            document.getElementById('navbang').style.top = 0;
-            document.getElementById('navbang1').style.opacity = 0;
-        } else {
-            document.getElementById('navbang').style.top = -100;
-            document.getElementById('navbang1').style.opacity = 1;
-        }
-    }
-</script>
+<script src="asset/Components++/Navbang-fixed/Navbang-fixed.js"></script>

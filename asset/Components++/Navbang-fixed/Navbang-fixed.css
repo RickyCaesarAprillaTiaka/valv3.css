@@ -1,0 +1,9 @@
+.fixed-navbang {
+    align-items: center;
+    z-index: 2;
+    display: flex; 
+    top: -100;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
