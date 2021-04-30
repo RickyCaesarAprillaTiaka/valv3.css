@@ -111,6 +111,34 @@ html {
 
 /* Text Size End */
 
+/* Text Weight */
+
+.t-bold {
+    font-weight: bold;
+}
+
+.t-light {
+    font-weight: 100;
+}
+
+/* Text Weight End */
+
+/* Text Style */
+
+.t-itali {
+    font-style: italic;
+}
+
+.t-under {
+    text-decoration: underline;
+}
+
+.t-strip {
+    text-decoration: line-through;
+}
+
+/* Text Style End */
+
 /* Text Color */
 
 .t-black {
