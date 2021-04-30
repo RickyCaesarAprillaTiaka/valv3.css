@@ -3,6 +3,7 @@
      rickycaesar6402@gmail.com
     ...- .- .-.. ...- ...-- .-.-.- . -..- . / -...- / .-. .. -.-. -.- -.-- / -.-. .- . ... .- .-. / .- .--. .-. .. .-.. .-.. .- / - .. .- -.- .- .-.-.- / .-. .. -.-. -.- -.-- -.-. .- . ... .- .-. -.... ....- ----- ..--- .--.-. --. -- .- .. .-.. .-.-.- -.-. --- --
 */
+@import url('https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap');
 
 * {
     padding: 0;
@@ -11,16 +12,11 @@
 
 /* Font Family */
 
-@font-face {
-    font-family: 'Æ Systematic TT BRK';
-    /* font name you can use it from your .tff file */
-    src: url('aesymatt.ttf');
-    /* from file font ttf, you can change it with your font */
-}
-
 html {
-    font-family: 'Æ Systematic TT BRK';
-    /* use font on html */
+    font-family: 'Fira Code';
+    /* font name you can use it from your .tff file */
+    /* src: url('aesymatt.ttf'); */
+    /* from file font ttf, you can change it with your font */
 }
 
 /* Font Family End */
@@ -1107,7 +1103,6 @@ a.t-white:hover {
 /* Button*/
 
 .btn {
-    font-family: 'Æ Systematic TT BRK';
     outline: none;
     border-radius: 5px;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
